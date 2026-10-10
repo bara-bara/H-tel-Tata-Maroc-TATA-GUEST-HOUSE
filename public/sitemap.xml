@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- الصفحة الرئيسية والمحتوى الرئيسي -->
+  <url>
+    <loc>https://hoteltataguesthouse.vercel.app/</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://hoteltataguesthouse.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hoteltataguesthouse.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://hoteltataguesthouse.vercel.app/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hoteltataguesthouse.vercel.app/" />
+
+    <!-- فهرسة صور الغرف الفندقية في محرك صور Google -->
+    <image:image>
+      <image:loc>https://hoteltataguesthouse.vercel.app/assets/hero_photo.png</image:loc>
+      <image:title>فندق TATA GUEST HOUSE في مدينة طاطا بالمغرب</image:title>
+      <image:caption>أفضل دار ضيافة وحجز غرف فندقية مكيفة في طاطا - تقييم 5 نجوم على جوجل</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cf.bstatic.com/xdata/images/hotel/max1024x768/632997009.jpg?k=04db88bb13247fca808bed3f9dc1b8d5db2b592ab9031e1d15ad3c773c1c0cfb&amp;o=</image:loc>
+      <image:title>غرفة ثلاثية مع حمام خاص في طاطا - TATA GUEST HOUSE</image:title>
+      <image:caption>غرفة فندقية ثلاثية مكيفة 35 متر مربع مع شرفة وإطلالة وحمام خاص وإنترنت سريع</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cf.bstatic.com/xdata/images/hotel/max1024x768/632992540.jpg?k=23c7837214fb99cdfabf3cbb87f6479643137c52e2bf0e25a39c4c5bdf3b67ea&amp;o=</image:loc>
+      <image:title>غرفة عائلية مع حمام خاص في طاطا - TATA GUEST HOUSE</image:title>
+      <image:caption>غرفة عائلية فسيحة مكيفة سرير مزدوج كبير وسرير فردي في مدينة طاطا</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cf.bstatic.com/xdata/images/hotel/max1024x768/668385376.jpg?k=edae9ea842be86bf9357fc6e37527625f3cac9c15030f30f8c9fa44cda60d9d3&amp;o=</image:loc>
+      <image:title>غرفة توأم مع حمام خاص في طاطا - TATA GUEST HOUSE</image:title>
+      <image:caption>غرفة توأم بأسرة فردية مكيفة ومجهزة بالكامل في طاطا</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://cf.bstatic.com/xdata/images/hotel/max1024x768/668376614.jpg?k=28b1562bbc141f8877821d5d7aaecd99a291b9d303d4ad1f7433350b1279e4ed&amp;o=</image:loc>
+      <image:title>غرفة مزدوجة مع حمام خاص في طاطا - TATA GUEST HOUSE</image:title>
+      <image:caption>غرفة مزدوجة رومانسية وهادئة مكيفة مع حمام خاص في مدينة طاطا</image:caption>
+    </image:image>
+  </url>
+
+  <!-- أقسام الموقع الهامة لأرشفة المحتوى الدلالي -->
+  <url>
+    <loc>https://hoteltataguesthouse.vercel.app/#rooms</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://hoteltataguesthouse.vercel.app/#location</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoteltataguesthouse.vercel.app/#faq-section</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hoteltataguesthouse.vercel.app/#tata-guide</loc>
+    <lastmod>2026-10-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
