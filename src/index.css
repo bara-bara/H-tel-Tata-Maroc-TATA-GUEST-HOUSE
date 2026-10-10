@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Quicksand', 'Cairo', sans-serif;
+    color: #1a1a1a;
+    background-color: #ffffff;
+  }
+}
+
+.tata-title-highlight {
+  background-image: linear-gradient(180deg, rgba(27, 176, 228, 0) 61%, #F7A708 48%);
+}

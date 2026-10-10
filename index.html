@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          var realFetch = window.fetch;
+          var fetchSetter = function(fn) {
+            realFetch = fn;
+          };
+          var fetchGetter = function() {
+            return realFetch;
+          };
+
+          // Define on Window.prototype if available
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try {
+              Object.defineProperty(Window.prototype, 'fetch', {
+                get: fetchGetter,
+                set: fetchSetter,
+                configurable: true,
+                enumerable: true
+              });
+            } catch (e) {}
+          }
+
+          // Define directly on window
+          try {
+            Object.defineProperty(window, 'fetch', {
+              get: fetchGetter,
+              set: fetchSetter,
+              configurable: true,
+              enumerable: true
+            });
+          } catch (e) {}
+        } catch (err) {}
+
+        // Suppress unhandled extension errors regarding 'Cannot set property fetch'
+        window.addEventListener('error', function(event) {
+          if (event && event.message && event.message.indexOf('fetch') !== -1 && event.message.indexOf('getter') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <title>فندق في مدينة طاطا المغرب | TATA GUEST HOUSE - دار ضيافة وحجز غرف</title>
+    <meta name="description" content="فندق ودار ضيافة TATA GUEST HOUSE في مدينة طاطا بالمغرب. غرف مريحة مكيفة بحمام خاص، إنترنت مجاني، إطلالة ساحرة، وموقف سيارات. أفضل الأسعار من 320 درهم. احجز إقامتك الآن!" />
+    <meta name="keywords" content="فندق في مدينة طاطا, فندق طاطا, فنادق طاطا, فندق طاطا المغرب, دار ضيافة طاطا, Tata Guest House, حجز فندق طاطا, أفضل فندق في طاطا, أرخص فندق في طاطا, hotel tata maroc, hotel tata morocco, auberge tata, maison dhote tata, sejour tata sud maroc, hebergement tata" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="author" content="TATA GUEST HOUSE" />
+    <link rel="canonical" href="https://tataguesthouse.com/" />
+
+    <!-- Geo Tags for Local SEO in Tata, Morocco -->
+    <meta name="geo.region" content="MA-09" />
+    <meta name="geo.placename" content="Tata, Morocco" />
+    <meta name="geo.position" content="29.755328;-7.976529" />
+    <meta name="ICBM" content="29.755328, -7.976529" />
+
+    <!-- OpenGraph Metadata -->
+    <meta property="og:locale" content="ar_MA" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:type" content="lodging" />
+    <meta property="og:title" content="فندق في مدينة طاطا المغرب | TATA GUEST HOUSE" />
+    <meta property="og:description" content="الخيار الأول للإقامة وحجز الغرف في مدينة طاطا بالمغرب. غرف مكيفة، حمام خاص، واي فاي، وأجواء عائلية راقية بأسعار تبدأ من 320 درهم." />
+    <meta property="og:url" content="https://tataguesthouse.com/" />
+    <meta property="og:site_name" content="TATA GUEST HOUSE - فندق ودار ضيافة طاطا" />
+    <meta property="og:image" content="/assets/hero_photo.png" />
+    <meta property="og:image:alt" content="فندق ودار ضيافة TATA GUEST HOUSE في مدينة طاطا" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="فندق في مدينة طاطا المغرب | TATA GUEST HOUSE" />
+    <meta name="twitter:description" content="أفضل دار ضيافة وفندق للإقامة في طاطا. غرف مكيفة، فطور مغربي، وإطلالة على جبال الأطلس الصغير." />
+    <meta name="twitter:image" content="/assets/hero_photo.png" />
+
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org JSON-LD Structured Data for Hotel & Local SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": ["Hotel", "BedAndBreakfast", "LodgingBusiness"],
+          "@id": "https://tataguesthouse.com/#hotel",
+          "name": "Tata Guest House - فندق ودار ضيافة طاطا",
+          "alternateName": ["Hôtel Tata", "فندق طاطا", "Auberge Tata Guest House", "Tata Guesthouse"],
+          "description": "فندق ودار ضيافة رائدة ومصنفة في مدينة طاطا، الجنوب المغربي. غرف مكيفة ومريحة مع حمامات خاصة وواي فاي فائق السرعة ومواقف سيارات آمنة وإطلالة على جبال الأطلس الصغير.",
+          "url": "https://tataguesthouse.com/",
+          "telephone": "+212655828966",
+          "email": "contact.tataguesthouse@gmail.com",
+          "image": [
+            "https://tataguesthouse.com/assets/hero_photo.png",
+            "https://tataguesthouse.com/assets/rooms/room_triple_1.jpg",
+            "https://tataguesthouse.com/assets/rooms/room_family.jpg",
+            "https://tataguesthouse.com/assets/rooms/room_twin.jpg",
+            "https://tataguesthouse.com/assets/rooms/room_double.jpg"
+          ],
+          "priceRange": "320 MAD - 404 MAD",
+          "currenciesAccepted": "MAD, EUR, USD",
+          "paymentAccepted": "Cash, Credit Card, Bank Transfer, PayPal",
+          "checkinTime": "14:00",
+          "checkoutTime": "12:00",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Villa N°03, Adnoun, Douar Tighremte, Avenue Mohamed V",
+            "addressLocality": "Tata",
+            "addressRegion": "Souss-Massa",
+            "postalCode": "84000",
+            "addressCountry": "MA"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 29.755328,
+            "longitude": -7.976529
+          },
+          "hasMap": "https://maps.google.com/?q=29.755328,-7.976529",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "128",
+            "bestRating": "5",
+            "worstRating": "1"
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "مكيف هواء (Climatisation)", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "واي فاي مجاني سريع (Wi-Fi Gratuit)", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "حمّام خاص (Salle de bain privative)", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "شرفة وإطلالة جبلية (Balcon & Vue montagne)", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "موقف سيارات ودراجات آمن (Parking sécurisé)", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "وجبات إفطار وعشاء تقليدية (Restauration marocaine)", "value": true }
+          ],
+          "containsPlace": [
+            {
+              "@type": "HotelRoom",
+              "name": "غرفة ثلاثية مع حمام خاص (Chambre Triple Privative)",
+              "occupancy": { "@type": "QuantitativeValue", "maxValue": 3 },
+              "bed": "3 أسرة فردية (3 Single Beds)"
+            },
+            {
+              "@type": "HotelRoom",
+              "name": "غرفة عائلية مع حمام خاص (Chambre Familiale Privative)",
+              "occupancy": { "@type": "QuantitativeValue", "maxValue": 4 },
+              "bed": "1 سرير مزدوج كبير و 1 سرير فردي"
+            },
+            {
+              "@type": "HotelRoom",
+              "name": "غرفة توأم مع حمام خاص (Chambre Lits Jumeaux Privative)",
+              "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
+              "bed": "2 أسرة فردية (2 Single Beds)"
+            },
+            {
+              "@type": "HotelRoom",
+              "name": "غرفة مزدوجة مع حمام خاص (Chambre Double Privative)",
+              "occupancy": { "@type": "QuantitativeValue", "maxValue": 2 },
+              "bed": "1 سرير مزدوج كبير (1 Large Double Bed)"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://tataguesthouse.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "ما هو أفضل فندق للإقامة في مدينة طاطا بالمغرب؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "فندق ودار ضيافة TATA GUEST HOUSE يُعد الخيار الأول والموصى به للمسافرين والسياح في مدينة طاطا، بفضل تقييم Google الممتاز (5.0/5) وتقييم Booking.com الاستثنائي (9.2/10)، وغرفه المكيفة مع حمامات خاصة وموقعه الهادئ قرب مركز طاطا."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "كم سعر حجز غرفة في فندق TATA GUEST HOUSE بطاطا؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "تبدأ أسعار الغرف من 320 درهم مغربي (خصم 20% مباشر للأعضاء)، شاملة كافة الضرائب والرسوم وخدمة الواي فاي عالي السرعة وموقف سيارات مجاني، وهي من أفضل وأنسب الأسعار في إقليم طاطا."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "هل تحتوي جميع الغرف على مكيف هواء وحمام خاص؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "نعم، جميع الغرف في TATA GUEST HOUSE (الغرفة الثلاثية، العائلية، المزدوجة، والتوأم) مجهزة بمكيف هواء حديث للتبريد والتدفئة، وحمام خاص نظيف ومجهز، بالإضافة إلى شرفة أو إطلالة مميزة."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "أين يقع فندق TATA GUEST HOUSE وكيف أصل إليه؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "يقع الفندق في فيلا رقم 3، أدنون، دوار تالغرمت، عند المدخل الشمالي لمدينة طاطا على شارع محمد الخامس، على بعد دقائق معدودة من مركز المدينة والواحة، مع سهولة تامة للوصول بالسيارة أو الدراجة وموقف سيارات آمن."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "كيف أحجز غرفة في فندق طاطا بأسرع طريقة؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "يمكنك الحجز الفوري والمباشر عبر الموقع من خلال اختيار نوع الغرفة وتأكيد الحجز بنقرة واحدة عبر الواتساب على الرقم +212655828966، أو الحجز عبر شريكنا الرسمي Booking.com."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "المغرب (Morocco)", "item": "https://tataguesthouse.com/" },
+            { "@type": "ListItem", "position": 2, "name": "جهة سوس ماسة", "item": "https://tataguesthouse.com/#region" },
+            { "@type": "ListItem", "position": 3, "name": "مدينة طاطا (Tata)", "item": "https://tataguesthouse.com/#tata" },
+            { "@type": "ListItem", "position": 4, "name": "فندق TATA GUEST HOUSE", "item": "https://tataguesthouse.com/#hotel" }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-white text-[#1a1a1a] antialiased selection:bg-[#F5A623]/25 selection:text-[#1a1a1a]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

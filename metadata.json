@@ -1,0 +1,8 @@
+{
+  "name": "Tata Guesthouse Manager",
+  "description": "A refined, high-speed redesign of your guesthouse website, featuring a professional layout while maintaining your original branding.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
